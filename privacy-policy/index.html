@@ -1,62 +1,221 @@
-Privacy Policy
-Effective Date: April 1, 2026
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy | Ai Fitness Alarm</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #2563eb;
+            --text-dark: #1f2937;
+            --text-light: #4b5563;
+            --bg-light: #f9fafb;
+            --accent-bg: #ffffff;
+            --border-color: #e5e7eb;
+        }
 
-Welcome to Ai Fitness Alarm. We are committed to protecting your privacy while helping you achieve your fitness goals. This Privacy Policy explains how we collect, use, and safeguard your information when you use our AI Fitness Alarm application.
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: var(--bg-light);
+            margin: 0;
+            padding: 0;
+        }
 
-1. Information We Collect and Why
-To provide a seamless "fitness-first" alarm experience, we require specific permissions on your device. We only collect data that is strictly necessary for the app's functionality.
+        header {
+            background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+            color: white;
+            padding: 4rem 1rem;
+            text-align: center;
+        }
 
-Core App Functionalities
-Camera: Used solely for AI-driven fitness verification (e.g., ensuring you are out of bed or performing a specific exercise to silence the alarm). Images are processed locally on-device and are not stored on our servers.
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
 
-Activity Recognition (Step Counting): Used to detect movement and verify that you have started your morning activity.
+        header p {
+            opacity: 0.9;
+            margin-top: 0.5rem;
+        }
 
-Alarms & System Tools: We use SCHEDULE_EXACT_ALARM, WAKE_LOCK, and RECEIVE_BOOT_COMPLETED to ensure your fitness alarms trigger reliably, even after a device reboot.
+        .container {
+            max-width: 900px;
+            margin: -40px auto 40px auto;
+            background: var(--accent-bg);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
 
-Connectivity & Analytics
-Internet & Network State: Used to check for app updates, sync settings (if applicable), and provide AI model improvements.
+        section {
+            margin-bottom: 2.5rem;
+        }
 
-Advertising ID (AD_ID): Used for analytics and to provide relevant, non-intrusive advertisements that help keep the app free to use.
+        h2 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 0.5rem;
+            margin-top: 2rem;
+        }
 
-User Experience
-Foreground Services: We use FOREGROUND_SERVICE_MEDIA_PLAYBACK to play your chosen alarm audio and maintain the fitness tracking session while the app is in use.
+        h3 {
+            font-size: 1.25rem;
+            color: var(--text-dark);
+            margin-top: 1.5rem;
+        }
 
-Notifications & Vibration: Used to alert you of upcoming alarms and provide haptic feedback during fitness challenges.
+        .permission-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
 
-2. Data Usage and Security
-We value your trust. Here is how we handle your data:
+        .card {
+            background: #f3f4f6;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid var(--primary-color);
+        }
 
-No Personal Sale: We do not sell your personal data or fitness activity to third parties.
+        .card strong {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: var(--primary-color);
+        }
 
-On-Device Processing: Whenever possible, AI analysis (like exercise detection) happens directly on your smartphone to maximize privacy.
+        ul {
+            padding-left: 1.2rem;
+        }
 
-Encryption: Any data transmitted to our servers (such as crash reports or anonymous analytics) is encrypted via Industry-standard SSL/TLS protocols.
+        li {
+            margin-bottom: 0.8rem;
+        }
 
-3. Third-Party Services
-Our app may use third-party tools (like Google Play Services) that collect information used to identify you. These services may include:
+        .contact-box {
+            background: #eff6ff;
+            border: 1px solid #bfdbfe;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
 
-Google Analytics for Firebase (To understand app performance)
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
 
-AdMob (To display advertisements)
+        @media (max-width: 768px) {
+            .container {
+                margin: 20px;
+                padding: 20px;
+            }
+            header h1 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
 
-Unity ads (To display advertisements)
+<header>
+    <h1>Privacy Policy</h1>
+    <p>Effective Date: April 1, 2026</p>
+</header>
 
-Each of these providers has their own privacy policy regarding how they handle the AD_ID and usage data.
+<div class="container">
+    <section>
+        <p>Welcome to <strong>Ai Fitness Alarm</strong>. We are committed to protecting your privacy while helping you achieve your fitness goals. This Privacy Policy explains how we collect, use, and safeguard your information when you use our application.</p>
+    </section>
 
-4. Your Choices and Controls
-You have full control over the data you share:
+    <section>
+        <h2>1. Information We Collect and Why</h2>
+        <p>To provide a seamless "fitness-first" alarm experience, we require specific permissions on your device. We only collect data that is strictly necessary for the app's functionality.</p>
 
-Permission Management: You can revoke any permission (Camera, Activity Recognition, etc.) at any time through your Android System Settings. Note that this may disable core features of the alarm.
+        <h3>Core App Functionalities</h3>
+        <div class="permission-grid">
+            <div class="card">
+                <strong>Camera</strong>
+                Used solely for AI-driven fitness verification (e.g., ensuring you are out of bed). Images are processed locally and are never stored on our servers.
+            </div>
+            <div class="card">
+                <strong>Activity Recognition</strong>
+                Used for step counting to detect movement and verify that you have started your morning activity.
+            </div>
+            <div class="card">
+                <strong>Alarms & System Tools</strong>
+                Utilizes SCHEDULE_EXACT_ALARM, WAKE_LOCK, and RECEIVE_BOOT_COMPLETED to ensure alarms trigger reliably.
+            </div>
+        </div>
 
-Opt-out of Personalized Ads: You can reset your Advertising ID or opt-out of personalized interest-based ads in your device’s Google Settings.
+        <h3>Connectivity & Analytics</h3>
+        <ul>
+            <li><strong>Internet & Network State:</strong> Used to check for app updates, sync settings, and provide AI model improvements.</li>
+            <li><strong>Advertising ID (AD_ID):</strong> Used for analytics and to provide relevant, non-intrusive advertisements.</li>
+        </ul>
 
-5. Children's Privacy
-Our services are not directed to children under the age of 13. We do not knowingly collect personal information from children. If we discover that a child under 13 has provided us with personal information, we immediately delete this from our servers.
+        <h3>User Experience</h3>
+        <ul>
+            <li><strong>Foreground Services:</strong> Used to play alarm audio and maintain fitness tracking sessions.</li>
+            <li><strong>Notifications & Vibration:</strong> Used to alert you of upcoming alarms and provide haptic feedback.</li>
+        </ul>
+    </section>
 
-6. Changes to This Policy
-We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Effective Date" at the top.
+    <section>
+        <h2>2. Data Usage and Security</h2>
+        <p>We value your trust. Here is how we handle your data:</p>
+        <ul>
+            <li><strong>No Personal Sale:</strong> We do not sell your personal data or fitness activity to third parties.</li>
+            <li><strong>On-Device Processing:</strong> AI analysis happens directly on your smartphone to maximize privacy.</li>
+            <li><strong>Encryption:</strong> Data transmitted to our servers is protected via industry-standard SSL/TLS protocols.</li>
+        </ul>
+    </section>
 
-7. Contact Us
-If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us at:
+    <section>
+        <h2>3. Third-Party Services</h2>
+        <p>Our app uses trusted third-party tools that may collect information used to identify you:</p>
+        <ul>
+            <li>Google Analytics for Firebase</li>
+            <li>AdMob</li>
+            <li>Unity Ads</li>
+        </ul>
+    </section>
 
-Email: chainscube@gmail.com
+    <section>
+        <h2>4. Your Choices and Controls</h2>
+        <p>You have full control over your data:</p>
+        <ul>
+            <li><strong>Permission Management:</strong> You can revoke permissions (Camera, Activity, etc.) via Android System Settings.</li>
+            <li><strong>Opt-out of Ads:</strong> You can reset your Advertising ID or opt-out of interest-based ads in your Google Settings.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>5. Children's Privacy</h2>
+        <p>Our services are not directed to children under 13. We do not knowingly collect personal information from children. If discovered, such data is immediately deleted.</p>
+    </section>
+
+    <section>
+        <h2>6. Changes to This Policy</h2>
+        <p>We may update our Privacy Policy periodically. We will notify you of any changes by posting the new policy on this page.</p>
+    </section>
+
+    <section class="contact-box">
+        <h2>7. Contact Us</h2>
+        <p>If you have any questions or suggestions about our Privacy Policy, please contact us at:</p>
+        <p><strong>Email:</strong> <a href="mailto:chainscube@gmail.com">chainscube@gmail.com</a></p>
+    </section>
+</div>
+
+<footer>
+    &copy; 2026 Ai Fitness Alarm. All rights reserved.
+</footer>
+
+</body>
+</html>
